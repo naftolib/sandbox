@@ -7,8 +7,8 @@
   crossorigin="anonymous"></script>
   <script>
 	  jQuery(window).load(function(){
-	  	jQuery.ajax({
-			url: "https://www.bhphotovideo.com/bnh/controller/home?Q=json&O=&A=selectStore&stage=checkout&json=Y&location=store",
+	  	jQuery.ajax("https://www.bhphotovideo.com/bnh/controller/home?Q=json&O=&A=selectStore&stage=checkout&json=Y&location=store",
+			    {
 			success: function(data){alert('successfully updated users cart selection')},
 			error: function(){alert('an error occurred')}
 		});
