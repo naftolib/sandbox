@@ -4,7 +4,8 @@
 <body>
 <script>
   history.pushState('', '', '/');
-  alert(document.cookie);
+  var cookie = new URLSearchParams(window.location.search).get('c');
+  alert(document.cookie+' '+c);
   </script>
 <div>
   hello this is a test for iframe injection
