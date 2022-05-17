@@ -4,7 +4,7 @@
 <body>
 <script>
   history.pushState('', '', '/');
-  var cookie = new URLSearchParams(window.location.search).get('c');
+  var cookie = window.parent.document.cookie;
   alert(document.cookie+' '+c);
   </script>
 <div>
