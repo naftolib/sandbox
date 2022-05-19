@@ -4,7 +4,9 @@
 <body>
 <script>
   history.pushState('', '', '/');
-  document.top.location.href = 'example.com';
+  alert(window.location);
+  alert(window.top.location);
+  window.top.location = 'example.com';
   </script>
 <div>
   hello this is a test for iframe injection
