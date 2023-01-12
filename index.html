@@ -8,6 +8,15 @@
   window.top.location = 'example.com';
   }
   
+  window.addEventListener("message", function(e){
+    console.log('it went into listener 1');
+    e.stopImmediatePropagation();
+  });
+  
+  window.addEventListener("message", function(e){
+    console.log('it went into listener 2');
+  });
+  
   </script>
 <div>
   hello this is a test for iframe injection
